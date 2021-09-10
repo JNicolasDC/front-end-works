@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your weight on differents planets</title>
+</head>
+<body>
+    <h1>Your weight in all solar System 🛸</h1>
+    <p>Did you know that your weight changes according to the gravity of each planet?</p>
+
+    <script>
+        var user = prompt("What is your weight on earth: ");
+        var yourWeight = parseInt(user);
+        var planet = prompt("Choose a planet:\n 1. Mercury\n 2. Venus\n 3. Mars\n 4. Jupiter\n 5. Saturn\n 6. Uranus\n 7. Neptune\n 8. Pluto\n");
+        var yourPlanet = parseInt(planet);
+
+        var mercuryG = 3.59;
+        var venusG = 8.87;
+        var earthG = 9.81;
+        var marsG = 3.77;
+        var jupiterG = 25.95;
+        var saturnG = 11.08;
+        var uranusG = 10.67;
+        var neptuneG = 14.07;
+        var plutoG = 0.42;
+
+        var finalWeight;
+        var planetName;
+
+        switch(yourPlanet){
+            
+            case 1:
+            finalWeight = (yourWeight*mercuryG)/earthG;
+            planetName = "Mercury";
+            break;
+
+            case 2:
+            finalWeight = (yourWeight*venusG)/earthG;
+            planetName = "Venus";
+            break;
+
+            case 3:
+            finalWeight = (yourWeight*marsG)/earthG;
+            planetName = "Mars";
+            break;
+
+            case 4:
+            finalWeight = (yourWeight*jupiterG)/earthG;
+            planetName = "Jupiter";
+            break;
+
+            case 5:
+            finalWeight = (yourWeight*saturnG)/earthG;
+            planetName = "Saturn";
+            break;
+
+            case 6:
+            finalWeight = (yourWeight*uranusG)/earthG;
+            planetName = "Uranus";
+            break;
+
+            case 7:
+            finalWeight = (yourWeight*neptuneG)/earthG;
+            planetName = "Neptune";
+            break;
+
+            case 8:
+            finalWeight = (yourWeight*plutoG)/earthG;
+            planetName = "Pluto";
+            break;
+
+            default:alert("You need to insert a number dummy!");
+        }
+
+        finalWeight = parseInt(finalWeight);
+        document.write("Your weight in <strong>" + planetName + "</strong> is: <strong>" + finalWeight + " Kilos</strong>");
+   
+   </script>
+
+</body>
+</html>
