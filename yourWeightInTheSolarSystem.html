@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your weight on differents planets</title>
@@ -10,7 +10,8 @@
     <h1>Your weight in all solar System 🛸</h1>
     <p>Did you know that your weight changes according to the gravity of each planet?</p>
 
-    <script>
+    <script type="text/javascript">
+
         var user = prompt("What is your weight on earth: ");
         var yourWeight = parseInt(user);
         var planet = prompt("Choose a planet:\n 1. Mercury\n 2. Venus\n 3. Mars\n 4. Jupiter\n 5. Saturn\n 6. Uranus\n 7. Neptune\n 8. Pluto\n");
@@ -77,6 +78,11 @@
         finalWeight = parseInt(finalWeight);
         document.write("Your weight in <strong>" + planetName + "</strong> is: <strong>" + finalWeight + " Kilos</strong>");
    
+
+
+        var ruta = window.location;
+        document.write("Estás en : " + ruta.origin);
+        console.log("Mensaje Sectreto"+ruta)
    </script>
 
 </body>
