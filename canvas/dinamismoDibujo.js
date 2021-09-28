@@ -6,7 +6,6 @@ console.log(lienzo);
 
 var lineas = 400;
 var l = 0;
-var l2 = 0;
 
 var yI, xF;
 var xI, yF;
