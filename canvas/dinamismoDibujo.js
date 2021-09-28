@@ -39,7 +39,7 @@ while(l<lineas){
     xF = 10*(l+1);
     createDraws("blue", 0, yI, xF, 400);
     console.log("Linea: " + l);
-    l = l + 1;
+    l = l ++;
 }
 
 while(l2<lineas){
@@ -47,5 +47,5 @@ while(l2<lineas){
     yF = 10*(l2+1);
     createDraws("geen", xI, 0, 400, yF);
     console.log("Linea: " + l2);
-    l2 = l2 + 1;
+    l2 = l2 ++;
 }
