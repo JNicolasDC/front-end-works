@@ -42,10 +42,9 @@ while(l<lineas){
     l++;
 }
 
-while(l2<lineas){
+for(l2=0 ; l2<lineas ; l2++){
     xI = 10*l2;
     yF = 10*(l2+1);
     createDraws("geen", xI, 0, 400, yF);
     console.log("Linea: " + l2);
-    l2++;
 }
