@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+
+
+<style>
+
+/*NO es una buena practica tener lineas de codigo que se repitan constantemente, para esto sacamos el width en una clase aparte*/
+    .globalwidth{
+        width: 100%;
+    }
+    body{
+        margin: 0;
+    }
+    /* Aquí iría nuestro CSS */
+    p:nth-child(2n+1){
+        color:pink;
+    }
+    p:nth-child(2n){
+        color: green;
+    }
+    p::first-letter{
+        color: yellow;
+        font-size: 50px;
+    }
+    .caja1 {
+        background-color: yellowgreen;
+        width: 90px;
+        height: 90px;
+        padding: 90px;
+        border: 2px solid coral;
+    }
+    .caja2 {
+        background-color: cyan;
+        width: 30px;
+        height: 30px;
+        margin: 20px 40px 60px 80px;
+    }
+</style>
+
+
+<script>
+    // Aquí debería ir nuestro JavaScript
+</script>
+
+
+<body>
+    <header>
+        <a href="https://co.addi.com/">Mi empresa </a>
+        <nav></nav>
+        <section>Dia</section>
+        <section>Semana</section>
+        <h1>Cosas que debo hacer hoy</h1>
+    </header>
+    <ol>
+        <li>Aprender HTML</li>
+        <li>Aprender CSS</li>
+        <li>Aprender JavaScript</li>
+    </ol>
+
+    <div class="caja1"></div>
+    <div class="caja2"></div>
+
+    <div>
+        <pre>Practicando arquietecura FrontEnd
+             Proyecto To-Do list
+        </pre> 
+        <p>parrafo con css (propiedad color)</p> 
+        <p>pseudoelementos</p>
+        <p>😊 Happy</p>
+        <p>🤖 Robot</p>
+        <p>🚀 Rocket</p>
+        <p>🛸 UFO</p>
+        <p>🚁 Helicopter</p> 
+    </div>
+
+    <button onclick="">Click me</button>
+    
+    <h5>Prueba títulos</h5>
+    <h3>Para borrar Cntl+x en mac</h3>
+    <form action=""></form>
+    
+    <footer>Redes</footer>
+</body>
+
+</html>
