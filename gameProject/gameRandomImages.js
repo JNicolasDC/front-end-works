@@ -1,7 +1,23 @@
-/*var vp = document.getElementById("villaplatzi");
-var papel = vp.getContext("2d");
+var vp = document.getElementById("myFarm");
+var paper = vp.getContext("2d");
 
-var fondo = {
+var mapa = "tile.png";
+
+var background = new Image();
+background.src = mapa;
+background.addEventListener("load", drawing)
+
+var cow = new Image();
+cow.src = "vaca.png";
+
+
+
+function drawing(){
+  paper.drawImage(background, 0, 0);
+}
+
+
+/*var fondo = {
   url: "tile.png",
   cargaOK: false
 }
