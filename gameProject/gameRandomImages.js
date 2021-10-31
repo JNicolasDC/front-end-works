@@ -3,21 +3,66 @@ var paper = vp.getContext("2d");
 
 var mapa = "tile.png";
 
+var cow = {
+  url: "cow.png",
+  cargaOk: false
+};
+
 var background = new Image();
 background.src = mapa;
-background.addEventListener("load", drawing)
+background.addEventListener("load", loadingBackground);
 
-var cow = new Image();
-cow.src = "vaca.png";
+var chicken = new Image();
+chicken.src = "chicken.png";
+chicken.addEventListener("load", loadingChickens);
+
+cow.objecto = new Image();
+cow.objecto.src = "cow.png";
+cow.objecto.addEventListener("load", loadingCows);
+
+var pig = new Image();
+pig.src = "pig.png";
+pig.addEventListener("load", loadingPigs);
 
 
 
-function drawing(){
+function loadingBackground(){
   paper.drawImage(background, 0, 0);
 }
 
+function loadingChickens(){
+  paper.drawImage(chicken, 300, 300);
+}
 
-/*var fondo = {
+function loadingCows(){
+  paper.drawImage(cow, 340, 200);
+}
+
+function loadingPigs(){
+  paper.drawImage(pig, 250, 25);
+}
+
+
+console.log(aleatorio(5, 10))
+
+function aleatorio(min, max)
+{
+  var resultado;
+  resultado = Math.floor(Math.random() * (max - min + 1)) + min;
+  return resultado;
+}
+
+
+
+
+
+
+
+/*
+var vp = document.getElementById("villaplatzi");
+var papel = vp.getContext("2d");
+
+var fondo = {
   url: "tile.png",
   cargaOK: false
 }
@@ -65,12 +110,11 @@ function dibujar()
       papel.drawImage(vaca.imagen, x, y);
     }
   }
-}*/
-console.log(aleatorio(5, 10))
-
-function aleatorio(min, max)
+}
+function aleatorio(min, maxi)
 {
   var resultado;
-  resultado = Math.floor(Math.random() * (max - min + 1)) + min;
+  resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
   return resultado;
 }
+*/
